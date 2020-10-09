@@ -1,3 +1,5 @@
+'use strict';
+
 const btnBurger = document.querySelector('.btn-burger');
 const btnClose = document.querySelector('.btn-close');
 const catalog = document.querySelector('.catalog');
@@ -38,3 +40,5 @@ btnClose.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
 catalog.addEventListener('click', openSubMenu);
 btnReturn.addEventListener('click', closeSubMenu);
+
+//2.15
