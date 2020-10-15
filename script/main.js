@@ -3,10 +3,14 @@
 const btnBurger = document.querySelector('.btn-burger');
 const btnClose = document.querySelector('.btn-close');
 const catalog = document.querySelector('.catalog');
-const overlay = document.querySelector('.overlay');
 const subCatalog = document.querySelector('.subcatalog');
 const subCatalogHeader = document.querySelector('.subcatalog-header');
 const btnReturn = document.querySelector('.btn-return');
+
+const overlay = document.createElement('div');
+
+overlay.classList.add('overlay');
+document.body.insertAdjacentElement('beforeend', overlay);
 
 const openMenu = () => {
     catalog.classList.add('open');
